@@ -1,0 +1,32 @@
+[
+  {
+    "puuid": "demo_player",
+    "win": true,
+    "kills": 12,
+    "deaths": 3,
+    "assists": 8,
+    "champion": "Ahri",
+    "cs": 180,
+    "gold": 15000
+  },
+  {
+    "puuid": "demo_player",
+    "win": false,
+    "kills": 5,
+    "deaths": 6,
+    "assists": 4,
+    "champion": "Ezreal",
+    "cs": 160,
+    "gold": 13000
+  },
+  {
+    "puuid": "demo_player",
+    "win": true,
+    "kills": 8,
+    "deaths": 2,
+    "assists": 7,
+    "champion": "Lux",
+    "cs": 170,
+    "gold": 14000
+  }
+]
