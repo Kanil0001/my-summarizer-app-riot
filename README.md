@@ -1,26 +1,33 @@
 # LoL Stats Summary Generator
 
-**Hackathon Project** – Automatically fetches and summarizes a League of Legends player's latest match stats using Riot API. Includes interactive charts and CSV export.
+**Hackathon Project — Streamlit app**  
+Automatically fetches and summarizes a League of Legends player's recent match stats using the Riot API. Includes interactive charts, CSV export, and a demo mode for testing without an API key.
 
-## Features
-- Fetch ranked stats and recent matches
-- Displays metrics: Level, Rank, Win Rate, Avg KDA, Avg CS, Top Champion
-- Charts: KDA trend, Win/Loss pie, Champion distribution
-- Export match data to CSV
-- Demo mode (no API key required)
+[![Streamlit](https://img.shields.io/badge/Powered%20by-Streamlit-ff4655?logo=streamlit)](https://streamlit.io)
+[![Riot API](https://img.shields.io/badge/API-Riot%20Games-00a8ff)](https://developer.riotgames.com/)
 
-## Tech Stack
-- Python 3 + Streamlit
-- Riot API
-- Matplotlib, Pandas
+---
 
-## How to Run
-1. Clone repo:git clone <repo-url>
-cd LoL-Stats-Reddit-Hackathon
-2. Install dependencies:
-pip install -r requirements.txt
-3. Run app:
-streamlit run app.py
-**Note:** For live Riot API data, enter a valid Riot API key (expires every 24h). Otherwise, enable demo mode.
+## ✨ Features
+- Ranked overview: tier, LP, lifetime win rate.  
+- Recent matches: KDA, CS, gold, champion breakdown.  
+- Visuals: KDA trend, win/loss pie, champion distribution.  
+- Export: download match data as CSV.  
+- Demo mode: run without a Riot API key for offline/dev demos.  
+- Rate-limited & cached to respect Riot API limits.
 
-[![Streamlit](https://img.shields.io/badge/Powered%20by-Streamlit-ff4655?logo=streamlit)](https://streamlit.io) [![Riot API](https://img.shields.io/badge/API-Riot%20Games-00a8ff)](https://developer.riotgames.com/)
+---
+
+## 🛠 Tech stack
+- Python 3
+- Streamlit
+- Pandas, Matplotlib
+- Riot Games API
+
+---
+
+## 🚀 Quick start (local)
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/kanil0001/my-summarizer-app-riot.git
+   cd my-summarizer-app-riot
