@@ -8,7 +8,7 @@ Automatically fetches and summarizes a League of Legends player's recent match s
 
 ---
 
-## ✨ Features
+## Features
 - Ranked overview: tier, LP, lifetime win rate.  
 - Recent matches: KDA, CS, gold, champion breakdown.  
 - Visuals: KDA trend, win/loss pie, champion distribution.  
@@ -26,7 +26,7 @@ Automatically fetches and summarizes a League of Legends player's recent match s
 
 ---
 
-## 🚀 Quick start (local)
+## Quick start (local)
 1. Clone the repo:
    ```bash
    git clone https://github.com/kanil0001/my-summarizer-app-riot.git
