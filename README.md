@@ -18,7 +18,7 @@ Automatically fetches and summarizes a League of Legends player's recent match s
 
 ---
 
-## 🛠 Tech stack
+## Tech stack
 - Python 3
 - Streamlit
 - Pandas, Matplotlib
