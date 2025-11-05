@@ -8,7 +8,7 @@ import json
 import time
 
 # Page config
-st.set_page_config(page_title="LoL Stats Summary Generator", layout="wide")
+st.set_page_config(page_title="Game Stats Summary Generator", layout="wide")
 
 # Custom CSS
 st.markdown("""
@@ -20,10 +20,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown('<h1 class="main-header">🔥 League of Legends Stats Generator</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">League of Legends Stats Generator</h1>', unsafe_allow_html=True)
 
 # Sidebar config
-st.sidebar.header("⚙️ Configuration")
+st.sidebar.header("Configuration")
 demo_mode = st.sidebar.checkbox("Use Demo Data (no API key)")
 api_key = ""
 if not demo_mode:
@@ -78,7 +78,7 @@ def get_match_details(match_id, api_key):
 
 # ----------- Main Logic -----------
 
-if st.sidebar.button("Generate Stats! 🚀"):
+if st.sidebar.button("Generate"):
     with st.spinner("Fetching data..."):
         try:
             # Fetch Summoner
@@ -132,7 +132,7 @@ if st.sidebar.button("Generate Stats! 🚀"):
                 col4.metric("Top Champ", top_champ)
 
                 # Charts
-                with st.expander("📊 Charts"):
+                with st.expander("Charts"):
                     # Win/Loss Pie
                     fig1, ax1 = plt.subplots()
                     df['win'].value_counts().plot(kind='pie', ax=ax1, autopct='%1.1f%%', colors=['#4CAF50','#F44336'])
